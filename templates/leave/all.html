@@ -1,0 +1,13 @@
+<h1>Employee list</h1>
+
+{% if emp %}
+<ul>
+  {% for e in emp %}
+  <li>{{e.firstname}}</li>
+  {% endfor %}  
+</ul>
+
+{% else %}
+<p> there is  no any employee in databse</p>
+{% endif %}
+
